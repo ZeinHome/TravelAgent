@@ -51,3 +51,19 @@
     margin-top: 1em;
   }
 }
+
+.discover__picture {
+  position: relative;
+}
+
+.discover__picture-hint {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+}
+
+.discover__picture-scroll {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
