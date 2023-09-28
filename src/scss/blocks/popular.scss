@@ -1,0 +1,36 @@
+.populaer {
+  padding: 60px 0;
+}
+
+.populaer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 32px;
+
+  .populaer__title h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%;
+
+    color: var(--text-muted);
+  }
+}
+
+.populaer__controls {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
