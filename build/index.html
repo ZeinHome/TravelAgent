@@ -100,11 +100,13 @@
     />
   </label>
   <button type="button" class="form__btn">
-    <img
-      src="./img/icons/search.svg"
-      alt="search"
-      srcset="/default-small.jpg 1x, /default-medium.jpg 2x"
-    />
+    <picture>
+      <source
+        media="(min-width: 200px)"
+        srcset="./img/icons/search.svg 1x, ./img/icons/search.svg 2x"
+      />
+      <img src="./img/icons/search.svg" alt="Search" />
+    </picture>
   </button>
 </form>
 
