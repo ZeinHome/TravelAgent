@@ -10,8 +10,6 @@ function datePicker() {
     format: 'HH:mm, DD/MM/YY',
     plugins: [TimePlugin],
   });
-
-  return picker;
 }
 
 export default datePicker;
