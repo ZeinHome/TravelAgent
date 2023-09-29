@@ -100,7 +100,11 @@
     />
   </label>
   <button type="button" class="form__btn">
-    <img src="./img/icons/search.svg" alt="search" />
+    <img
+      src="./img/icons/search.svg"
+      alt="search"
+      srcset="/default-small.jpg 1x, /default-medium.jpg 2x"
+    />
   </button>
 </form>
 
@@ -241,6 +245,26 @@
         <div class="card__rating">(4.5)</div>
       </div>
       <div class="card__price">Starts from <i>$</i><span>1100</span></div>
+    </li>
+
+    <li class="swiper-slide">
+      <img src="./img/popular/new-york.jpg" alt="New York" />
+
+      <div class="card__description">
+        <h3 class="card__title">New York, USA</h3>
+        <div class="card__rating">(4.5)</div>
+      </div>
+      <div class="card__price">Starts from <i>$</i><span>1800</span></div>
+    </li>
+
+    <li class="swiper-slide">
+      <img src="./img/popular/dubai.jpg" alt="Dubai" />
+
+      <div class="card__description">
+        <h3 class="card__title">Dubai, UAE</h3>
+        <div class="card__rating">(4.5)</div>
+      </div>
+      <div class="card__price">Starts from <i>$</i><span>900</span></div>
     </li>
   </ul>
 </div>
@@ -517,9 +541,38 @@
 
     </main>
     <footer class="footer">
-	<div class="container">
-		<h2>Footer</h2>
-	</div>
+  <div class="container">
+    <div class="footer__rows">
+      <div class="footer__copyrigth">
+        <img src="./img/icons/logo.svg" alt="Logo" />
+
+        <p>
+          Wanderlust meets wander well – Experience seamless travel with our
+          services.
+        </p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer-company">
+          <h3>Company</h3>
+          <ul class="footer-nav">
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Customers</li>
+            <li>Packages</li>
+            <li>Community</li>
+          </ul>
+        </div>
+        <div class="footer-help">
+          <h3>Help</h3>
+          <ul class="footer-nav">
+            <li>Support</li>
+            <li>FAQs</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
