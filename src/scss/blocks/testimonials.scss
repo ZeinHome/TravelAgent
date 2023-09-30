@@ -6,10 +6,19 @@
   gap: 32px;
 }
 
-.testimonials__col {
-  display: grid;
+.testimonials__col--one {
+  height: 900px;
+}
 
-  gap: 32px;
+.testimonials__swiper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+
+  .swiper-slide {
+    padding: 0 10px;
+    height: 325px !important;
+  }
 }
 
 .card-review {

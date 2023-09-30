@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 function swiperCard() {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-destinations', {
     slidesPerView: 4,
     spaceBetween: 32,
     navigation: {
