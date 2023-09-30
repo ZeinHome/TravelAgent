@@ -8,6 +8,5 @@ import swiperCardTestiomonials from './modules/swiper-testimonials';
 swiperCardTestiomonials();
 import scrollAniimation from './modules/scrollAniimation';
 scrollAniimation();
-
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();

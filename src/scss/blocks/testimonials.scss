@@ -18,6 +18,7 @@
   .swiper-slide {
     padding: 0 10px;
     height: 325px !important;
+    flex-shrink: inherit !important;
   }
 }
 

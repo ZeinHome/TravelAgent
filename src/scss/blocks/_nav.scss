@@ -19,9 +19,17 @@
   a:hover {
     color: var(--accent);
   }
+
+  @include mediaMobile {
+    display: none;
+  }
 }
 
 .nav__btn {
   display: flex;
   gap: 12px;
+
+  @include mediaMobile {
+    display: none;
+  }
 }
