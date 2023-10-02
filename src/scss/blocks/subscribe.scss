@@ -3,6 +3,10 @@
   background-color: var(--accent);
 
   overflow: hidden;
+
+  @include mediaLaptop {
+    padding: 40px 0;
+  }
 }
 
 .subscribe__rows {
@@ -15,6 +19,17 @@
 
   padding-left: 180px;
 
+  @include mediaTablet {
+    flex-direction: column;
+    text-align: center;
+
+    padding: 0 150px;
+  }
+
+  @include mediaMobile {
+    padding: 0;
+  }
+
   &::before {
     content: '';
 
@@ -26,6 +41,14 @@
 
     background-image: url('./../img/subscribe/subscribe-pin-bg.svg');
     background-repeat: no-repeat;
+
+    @include mediaTablet {
+      top: -60px;
+    }
+
+    @include mediaMobile {
+      display: none;
+    }
   }
 }
 
@@ -49,12 +72,18 @@
 
 .subscribe__form {
   flex-grow: 1;
+
+  min-width: 400px;
 }
 .subscribe-form {
   display: flex;
   align-items: center;
 
   gap: 12px;
+
+  @include mediaMobileXS {
+    flex-direction: column;
+  }
 }
 
 .subscribe-form__input {
@@ -98,6 +127,10 @@
   background-color: var(--btn-bg);
 
   transition: opacity 0.2s ease-in;
+
+  @include mediaMobileXS {
+    width: 228px;
+  }
 
   &:hover {
     opacity: 0.8;

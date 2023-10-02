@@ -19,6 +19,14 @@
   }
 }
 
+.discover__desc {
+  @include mediaMobileXS {
+    width: 240px;
+
+    margin: 0 auto;
+  }
+}
+
 .discover__title {
   color: var(--text-color);
   font-size: 72px;
@@ -35,6 +43,9 @@
     font-size: 32px;
   }
 
+  @include mediaMobileXS {
+    font-size: 22px;
+  }
   &--decor {
     position: relative;
   }
@@ -64,6 +75,10 @@
 
 .discover__text {
   margin-bottom: 40px;
+
+  @include mediaMobileXS {
+    margin-bottom: 20px;
+  }
 }
 
 .text {
@@ -74,6 +89,10 @@
 
   @include mediaMobile {
     font-size: 16px;
+  }
+
+  @include mediaMobileXS {
+    font-size: 14px;
   }
 
   p + p {
@@ -94,6 +113,10 @@
 
     margin: 0 auto;
   }
+
+  @include mediaMobileXS {
+    width: 200px;
+  }
 }
 
 .discover__picture-hint {
@@ -109,6 +132,9 @@
   @include mediaMobile {
     top: 30px;
     left: 0;
+  }
+  @include mediaMobileXS {
+    display: none;
   }
 }
 

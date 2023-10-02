@@ -11,6 +11,11 @@
   align-items: center;
 
   gap: 30px;
+
+  @include mediaLaptop {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .partnes__title {
@@ -27,4 +32,9 @@
   align-items: center;
 
   gap: 32px;
+
+  @include mediaMobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

@@ -9,6 +9,12 @@
   grid-template-columns: 1fr 1fr;
 
   gap: 128px;
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
 }
 
 .footer__copyrigth {
@@ -32,6 +38,10 @@
   align-items: flex-start;
 
   gap: 40px;
+
+  @include mediaTablet {
+    grid-row: -1 / 1;
+  }
 }
 
 .footer-company,

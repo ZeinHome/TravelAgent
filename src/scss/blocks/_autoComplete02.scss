@@ -76,5 +76,9 @@
 @media only screen and (max-width: 600px) {
   .autoComplete_wrapper > input {
     width: 18rem;
+
+    @include mediaMobileXS {
+      width: 180px;
+    }
   }
 }

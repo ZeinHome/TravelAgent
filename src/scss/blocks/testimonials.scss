@@ -1,13 +1,32 @@
+.testimonials-horizontal {
+  display: none;
+
+  .swiper {
+    width: 100%;
+  }
+
+  @include mediaTablet {
+    display: block;
+  }
+}
 .testimonials__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   overflow: hidden;
   gap: 32px;
+
+  @include mediaTablet {
+    display: none;
+  }
 }
 
 .testimonials__col--one {
   height: 900px;
+
+  @include mediaLaptop {
+    height: 500px;
+  }
 }
 
 .testimonials__swiper {
@@ -16,9 +35,16 @@
   transition-timing-function: linear !important;
 
   .swiper-slide {
-    padding: 0 10px;
-    height: 325px !important;
-    flex-shrink: inherit !important;
+    padding: 0 10px 32px;
+    height: 360px !important;
+  }
+
+  & > * {
+    height: 100%;
+  }
+
+  @include mediaLaptop {
+    height: 400px;
   }
 }
 
@@ -33,6 +59,14 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 4px 10px 0px rgba(23, 28, 31, 0.23);
+
+  @include mediaTablet {
+    height: 100%;
+  }
+
+  @include mediaMobileXS {
+    height: 120% !important;
+  }
 }
 
 .card-review__rating {

@@ -1,5 +1,14 @@
 <section class="testimonials">
   <div class="container">
+    <div class="testimonials-horizontal">
+      <div class="swiper testimonials__col--horiontal">
+        <div class="testimonials__swiper swiper-wrapper">
+          @@loop('testimonials/card-review.html',
+          "./data/testimonialsColOne.json")
+        </div>
+      </div>
+    </div>
+
     <div class="testimonials__grid">
       @@include('testimonials/col-1.html') @@include('testimonials/col-2.html')
       @@include('testimonials/col-3.html')
