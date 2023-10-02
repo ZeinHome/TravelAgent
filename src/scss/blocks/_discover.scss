@@ -1,5 +1,9 @@
 .discover {
   padding: 60px;
+
+  @include mediaMobile {
+    padding: 20px;
+  }
 }
 
 .discover__grid {
@@ -7,6 +11,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
 }
 
 .discover__title {
@@ -16,6 +26,14 @@
   line-height: normal;
 
   margin-bottom: 24px;
+
+  @include mediaLaptop {
+    font-size: 52px;
+  }
+
+  @include mediaMobile {
+    font-size: 32px;
+  }
 
   &--decor {
     position: relative;
@@ -34,6 +52,13 @@
     background-repeat: no-repeat;
 
     z-index: -1;
+
+    @include mediaMobile {
+      width: 184px;
+      height: 12px;
+
+      background-size: contain;
+    }
   }
 }
 
@@ -47,6 +72,10 @@
   font-weight: 450;
   line-height: 1.5;
 
+  @include mediaMobile {
+    font-size: 16px;
+  }
+
   p + p {
     margin-top: 1em;
   }
@@ -54,16 +83,46 @@
 
 .discover__picture {
   position: relative;
+
+  width: fit-content;
+
+  @include mediaTablet {
+    display: flex;
+    justify-content: center;
+
+    grid-row: -1 / 1;
+
+    margin: 0 auto;
+  }
 }
 
 .discover__picture-hint {
   position: absolute;
   top: 90px;
   left: 40px;
+
+  @include mediaLaptop {
+    top: 40px;
+    left: 20px;
+  }
+
+  @include mediaMobile {
+    top: 30px;
+    left: 0;
+  }
 }
 
 .discover__picture-scroll {
   position: absolute;
   right: 15px;
   bottom: 20px;
+
+  @include mediaLaptop {
+    bottom: 0;
+    right: 0;
+  }
+
+  @include mediaMobile {
+    width: 30%;
+  }
 }

@@ -9,6 +9,10 @@
 
   border-radius: 16px;
   border: 1px solid rgba(144, 144, 144, 0.3);
+
+  @include mediaMobile {
+    grid-template-columns: 1fr;
+  }
 }
 
 .from__devider {
@@ -16,6 +20,10 @@
   height: 24px;
 
   background-color: var(--text-muted);
+
+  @include mediaMobile {
+    display: none;
+  }
 }
 
 .form__label {
@@ -67,11 +75,15 @@
   :hover {
     opacity: 0.8;
   }
-  @media screen and (max-width: 700px) {
-    width: 50px;
-  }
+
   img {
     width: 24px;
     height: 24px;
+  }
+
+  @include mediaMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
