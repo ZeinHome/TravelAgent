@@ -128,7 +128,7 @@
 
   transition: opacity 0.2s ease-in;
 
-  @include mediaMobileXS {
+  @include mediaMobile {
     width: 228px;
   }
 
