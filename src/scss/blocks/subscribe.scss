@@ -81,7 +81,7 @@
 
   gap: 12px;
 
-  @include mediaMobileXS {
+  @include mediaMobile {
     flex-direction: column;
   }
 }
